@@ -52,7 +52,7 @@
                 <div class="card" style="height: 70vh;">
                 <div class="card-content">
                     <form action="post.php" method="post">
-                            <input class="input is-primary" type="text" placeholder="输入链接地址 备注：此处只处理单个链接" name="single">
+                            <input class="input is-primary" type="text" id="input"placeholder="输入链接地址 备注：此处只处理单个链接" name="single" onclick="focusMethod()">
                         <footer class="card-footer">
                             <p class="card-footer-item">
                                 <button class="button">提交</button>
@@ -74,5 +74,8 @@
         </p>
     </div>
 </footer>
+<script>
+    document.getElementById("input").focus();
+</script>
 </body>
 </html>

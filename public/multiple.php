@@ -52,7 +52,7 @@
             <div class="card" style="height: 70vh;">
                 <div class="card-content">
                     <form action="post.php" method="post">
-                        <textarea class="textarea is-primary" name="multiple" cols="40" rows="5" placeholder="输入多个链接地址 并用回车隔开"></textarea>
+                        <textarea class="textarea is-primary" name="multiple" id="input" cols="40" rows="5" placeholder="输入多个链接地址 并用回车隔开"></textarea>
                         <footer class="card-footer">
                             <p class="card-footer-item">
                                 <button class="button">提交</button>
@@ -74,5 +74,8 @@
         </p>
     </div>
 </footer>
+<script>
+    document.getElementById("input").focus();
+</script>
 </body>
 </html>
