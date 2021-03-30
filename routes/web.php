@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/add', function () {
+    return view('index');
+});
+
+Route::match(['get','post'],'/post', function () {
+    return '这里只接受POST数据';
 });
