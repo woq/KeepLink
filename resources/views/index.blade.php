@@ -43,6 +43,34 @@
         </div>
     </div>
 </nav>
+<div class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <form class="py-40 bg-gray-100  bg-opacity-50 h-screen xl:w-1/4 sm:w-1/2" action="/post" method="post">
+        <div class="mx-auto container max-w-full md:w-3/4 shadow-md">
+            <div class="bg-gray-100 p-4 border-t-2 bg-opacity-5 border-indigo-400 rounded-t">
+                <div class="max-w-sm mx-auto md:w-full md:mx-0 text-center">
+                    <div class="inline-flex items-center space-x-4">
+                        <h1 class="text-gray-600">输入链接地址</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white space-y-6">
+                <div class="md:inline-flex space-y-4 md:space-y-0 w-full p-4 text-gray-500 items-center">
+                    <textarea class="w-full text-center" name="url" id="url" placeholder=" 支持多个链接 &#10;用回车隔开"></textarea>
+                </div>
+            </div>
+
+
+                <hr />
+                <div class="w-full p-4 text-right text-gray-500">
+                    <button class="inline-flex items-center focus:outline-none mr-4" type="submit">
+                        提交
+                    </button>
+                </div>
+
+            </div>
+    </form>
+</div>
 
 </body>
+
 </html>
