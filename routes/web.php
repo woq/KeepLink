@@ -22,5 +22,5 @@ Route::get('/add', function () {
 });
 
 Route::match(['get','post'],'/post', function () {
-    return '这里只接受POST数据';
+    return view('post');
 });
