@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\sango;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,13 +19,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::match(['get','post'],'/post', function (Request $request) {
-    if ($request->isMethod('post')) {
-        return view('post', ['success' => $request]);
-    }else{
-        return 'yes'.$request->ip();
-    }
-});
+Route::post('/post', \App\Http\Controllers\sango::class);
 
 Route::get('/status', function () {
     return view('status');
