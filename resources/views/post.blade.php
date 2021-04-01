@@ -55,7 +55,7 @@
             </div>
             <div class="bg-white space-y-6">
                 <div class="md:inline-flex space-y-4 md:space-y-0 w-full p-4 text-gray-500 items-center text-center">
-                    <p class="w-full "></p>
+                    <p class="w-full ">{{$success}}</p>
                 </div>
             </div>
 
