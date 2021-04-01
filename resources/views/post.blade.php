@@ -55,7 +55,7 @@
             </div>
             <div class="bg-white space-y-6">
                 <div class="md:inline-flex space-y-4 md:space-y-0 w-full p-4 text-gray-500 items-center text-center">
-                    <p class="w-full ">class</p>
+                    <p class="w-full "></p>
                 </div>
             </div>
 
@@ -63,7 +63,7 @@
                 <hr />
                 <div class="w-full p-4 text-right text-gray-500">
                     <button class="inline-flex items-center focus:outline-none mr-4" type="submit">
-                        返回
+                        <a href="javascript:history.go(-1);">返回上一页</a>
                     </button>
                 </div>
 

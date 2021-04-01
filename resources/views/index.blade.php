@@ -45,6 +45,7 @@
 </nav>
 <div class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
     <form class="py-40 bg-gray-100  bg-opacity-50 h-screen xl:w-1/4 sm:w-1/2" action="/post" method="post">
+        @csrf<br>
         <div class="mx-auto container max-w-full md:w-3/4 shadow-md">
             <div class="bg-gray-100 p-4 border-t-2 bg-opacity-5 border-indigo-400 rounded-t">
                 <div class="max-w-sm mx-auto md:w-full md:mx-0 text-center">
