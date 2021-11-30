@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{% static '/sango/favicon.ico' %}"/>
+    <style>body {font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;}</style>
+    <title>起个什么名字好</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid"><a class="navbar-brand" href="#">应用 / 保链</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="home" href="/">主页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">关于</a></li>
+                </ul><span class="badge bg-primary">beta-01-Tuesday, August 3, 2021, week 31</span>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex align-items-center justify-content-center" style="height:70vh;">
+        <div class="card" style="width:20rem;height:20rem;">
+            <div class="card-header text-center">结果</div>
+            <div class="card-body justify-content-center align-items-center">
+                       <ul class="list-group">
+                        {% for result in results %}
+                            <li class="list-group-item">{{ result }}</li>
+                        {% endfor %}
+                        </ul>
+                         <hr>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="btn btn-primary" type="button" onclick="history.go(-1)">返回</button>
+                        </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
